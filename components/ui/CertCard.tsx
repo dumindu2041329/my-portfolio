@@ -27,7 +27,7 @@ export default function CertCard({ cert, index }: CertCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="group glass rounded-2xl p-6 neon-border transition-all duration-300"
+      className="group glass rounded-2xl p-4 sm:p-6 neon-border transition-all duration-300"
       style={{
         borderColor: `${cert.issuerColor}15`,
       }}

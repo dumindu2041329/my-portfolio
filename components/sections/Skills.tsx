@@ -14,7 +14,7 @@ export default function Skills() {
   );
 
   return (
-    <section id="skills" className="py-24 md:py-32 relative">
+    <section id="skills" className="py-16 md:py-24 lg:py-32 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="Skills"
@@ -27,7 +27,7 @@ export default function Skills() {
             <button
               key={category.name}
               onClick={() => setActiveCategory(category.name)}
-              className={`relative px-5 py-2 rounded-full text-sm font-heading font-medium transition-all duration-300 ${
+              className={`relative px-4 py-1.5 sm:px-5 sm:py-2 rounded-full text-xs sm:text-sm font-heading font-medium transition-all duration-300 ${
                 activeCategory === category.name
                   ? "text-accent bg-accent/10 border border-accent/30"
                   : "text-text-muted hover:text-text-primary border border-transparent hover:border-border-glow"

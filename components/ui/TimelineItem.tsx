@@ -47,7 +47,7 @@ export default function TimelineItem({
           isLeft ? "md:pr-12" : "md:pl-12"
         }`}
       >
-        <div className="glass rounded-2xl p-6 neon-border group hover:glow-cyan transition-all duration-300">
+        <div className="glass rounded-2xl p-4 sm:p-6 neon-border group hover:glow-cyan transition-all duration-300">
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <span className="text-xs font-mono text-accent bg-accent/10 px-3 py-1 rounded-full">
               {duration}

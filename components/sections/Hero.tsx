@@ -54,7 +54,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden scanline-overlay pt-20 md:pt-24 pb-20 md:pb-24"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden scanline-overlay pt-16 sm:pt-20 lg:pt-32 pb-16 sm:pb-20 lg:pb-32"
       onMouseMove={handleMouseMove}
     >
       {/* Three.js animated background */}
@@ -84,7 +84,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-display font-black mb-4 gradient-text leading-tight"
+          className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-black mb-4 gradient-text leading-tight"
         >
           Dumindu Damsara
         </motion.h1>
@@ -94,9 +94,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-xl sm:text-2xl md:text-3xl font-heading font-semibold text-accent mb-6 h-10"
+          className="text-base sm:text-xl md:text-2xl lg:text-3xl font-heading font-semibold mb-6 h-10"
         >
-          <span>{displayText}</span>
+          <span className="gradient-text">{displayText}</span>
           <span className="typewriter-cursor" />
         </motion.div>
 
@@ -105,7 +105,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-lg text-text-muted max-w-xl mx-auto mb-10 font-body"
+          className="text-base sm:text-lg text-text-muted max-w-xl mx-auto mb-10 font-body px-2 sm:px-0"
         >
           Building tomorrow&apos;s web, today. Passionate about creating modern,
           performant, and beautiful digital experiences.
@@ -116,7 +116,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.0 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-12 w-full px-4 sm:px-0"
         >
           <GlowButton href="#projects" variant="primary">
             View My Work

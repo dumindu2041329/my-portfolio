@@ -76,7 +76,7 @@ export default function Navbar() {
               e.preventDefault();
               handleNavClick("#home");
             }}
-            className="text-xl font-display font-bold text-glow-cyan text-accent tracking-wider"
+            className="text-lg sm:text-xl font-display font-bold text-glow-cyan text-accent tracking-wider"
           >
             {"<Dumindu Damsara/>"}
           </a>

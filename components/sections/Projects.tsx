@@ -17,7 +17,7 @@ export default function Projects() {
       : projects.filter((p) => p.type === activeFilter);
 
   return (
-    <section id="projects" className="py-24 md:py-32 relative">
+    <section id="projects" className="py-16 md:py-24 lg:py-32 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="Projects"
@@ -30,7 +30,7 @@ export default function Projects() {
             <button
               key={tab}
               onClick={() => setActiveFilter(tab)}
-              className={`relative px-5 py-2 rounded-full text-sm font-heading font-medium transition-all duration-300 ${
+              className={`relative px-4 py-1.5 sm:px-5 sm:py-2 rounded-full text-xs sm:text-sm font-heading font-medium transition-all duration-300 ${
                 activeFilter === tab
                   ? "text-accent bg-accent/10 border border-accent/30"
                   : "text-text-muted hover:text-text-primary border border-transparent hover:border-border-glow"

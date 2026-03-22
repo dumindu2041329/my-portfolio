@@ -22,7 +22,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       }`}
     >
       {/* Image area */}
-      <div className="relative h-48 overflow-hidden bg-gradient-to-br from-accent/10 via-accent-purple/10 to-accent-pink/10">
+      <div className="relative h-40 sm:h-48 overflow-hidden bg-gradient-to-br from-accent/10 via-accent-purple/10 to-accent-pink/10">
         {project.image ? (
           <Image
             src={project.image}
@@ -67,7 +67,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       </div>
 
       {/* Card content */}
-      <div className="p-6">
+      <div className="p-4 sm:p-6">
         <div className="flex items-center justify-between mb-3">
           <h3 className="text-lg font-heading font-semibold text-text-primary group-hover:text-accent transition-colors duration-300">
             {project.title}

@@ -6,7 +6,7 @@ import { certifications } from "@/data/certifications";
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="py-24 md:py-32 relative">
+    <section id="certifications" className="py-16 md:py-24 lg:py-32 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           title="Certifications"

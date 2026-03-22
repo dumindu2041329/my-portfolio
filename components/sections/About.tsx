@@ -57,7 +57,7 @@ export default function About() {
   }, []);
 
   return (
-    <section id="about" className="py-24 md:py-32 relative" ref={sectionRef}>
+    <section id="about" className="py-16 md:py-24 lg:py-32 relative" ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading title="About Me" subtitle="Get to know me a little better" />
 
@@ -71,7 +71,7 @@ export default function About() {
             className="flex justify-center lg:justify-start"
           >
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden glass neon-border p-1">
+              <div className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden glass neon-border p-1">
                 <div className="w-full h-full rounded-xl overflow-hidden relative">
                   <Image
                     src="/profile.png"
