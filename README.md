@@ -104,12 +104,12 @@ npm start
 
 | Project | Type | Live |
 |---------|------|------|
-| 🎨 phpMyAdmin Themes | Other | [GitHub](https://github.com/dumindu2041329/phpmyadmin-themes) |
-| 🔒 FileShare | Web | [Live](https://file-share-puce.vercel.app) |
-| 🖼️ Free AI Image Generator | Web | [Live](https://image-generator-silk-mu.vercel.app) |
-| 💳 Stripe Payment Integration | Web | [Live](https://stripe-payment-seven-beta.vercel.app) |
-| 🍽️ Grilli Restaurant Template | Academic | [GitHub](https://github.com/dumindu2041329/grilli-restaurant) |
-| 🎮 Ubisoft Store Clone | Academic | [GitHub](https://github.com/dumindu2041329/ubisoft-store) |
+| 🎨 phpMyAdmin Themes | Other | <a href="https://github.com/dumindu2041329/phpmyadmin-themes" target="_blank">GitHub</a> |
+| 🔒 FileShare | Web | <a href="https://file-share-puce.vercel.app" target="_blank">Live</a> |
+| 🖼️ Free AI Image Generator | Web | <a href="https://image-generator-silk-mu.vercel.app" target="_blank">Live</a> |
+| 💳 Stripe Payment Integration | Web | <a href="https://stripe-payment-seven-beta.vercel.app" target="_blank">Live</a> |
+| 🍽️ Grilli Restaurant Template | Academic | <a href="https://github.com/dumindu2041329/grilli-restaurant" target="_blank">GitHub</a> |
+| 🎮 Ubisoft Store Clone | Academic | <a href="https://github.com/dumindu2041329/ubisoft-store" target="_blank">GitHub</a> |
 
 ---
 
