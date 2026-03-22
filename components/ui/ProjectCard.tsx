@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
 import type { Project } from "@/data/projects";
 
 interface ProjectCardProps {
@@ -20,14 +21,24 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         project.featured ? "md:col-span-2" : ""
       }`}
     >
-      {/* Image placeholder with gradient */}
+      {/* Image area */}
       <div className="relative h-48 overflow-hidden bg-gradient-to-br from-accent/10 via-accent-purple/10 to-accent-pink/10">
+        {project.image ? (
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span className="text-6xl font-display font-bold text-accent/10 group-hover:text-accent/20 transition-colors duration-500">
+              {project.title.charAt(0)}
+            </span>
+          </div>
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent z-10" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-6xl font-display font-bold text-accent/10 group-hover:text-accent/20 transition-colors duration-500">
-            {project.title.charAt(0)}
-          </span>
-        </div>
         {/* Hover overlay */}
         <div className="absolute inset-0 z-20 flex items-center justify-center gap-4 bg-base/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           {project.liveUrl && (

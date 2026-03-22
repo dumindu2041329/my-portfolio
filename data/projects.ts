@@ -18,6 +18,7 @@ export const projects: Project[] = [
     techStack: ["CSS", "SCSS", "UI Design"],
     type: "Other",
     githubUrl: "https://github.com/dumindu2041329/phpmyadmin-themes",
+    image: "/projects/phpmyadmin-themes.png",
   },
   {
     id: "file-share",
@@ -27,6 +28,7 @@ export const projects: Project[] = [
     type: "Web",
     githubUrl: "https://github.com/dumindu2041329/file-share",
     liveUrl: "https://file-share-puce.vercel.app",
+    image: "/projects/file-share.png",
   },
   {
     id: "Image-Generator",
@@ -36,6 +38,7 @@ export const projects: Project[] = [
     type: "Web",
     githubUrl: "https://github.com/dumindu2041329/Image-Generator",
     liveUrl: "https://image-generator-silk-mu.vercel.app",
+    image: "/projects/image-generator.png",
   },
   {
     id: "stripe-payment",
@@ -45,6 +48,7 @@ export const projects: Project[] = [
     type: "Web",
     githubUrl: "https://github.com/dumindu2041329/stripe-payment",
     liveUrl: "https://stripe-payment-seven-beta.vercel.app",
+    image: "/projects/stripe-payment.png",
   },
   {
     id: "grilli-restaurant",
@@ -53,6 +57,7 @@ export const projects: Project[] = [
     techStack: ["HTML", "CSS", "JavaScript"],
     type: "Academic",
     githubUrl: "https://github.com/dumindu2041329/grilli-restaurant",
+    image: "/projects/grilli-restaurant.png",
   },
   {
     id: "ubisoft-store",
@@ -61,5 +66,6 @@ export const projects: Project[] = [
     techStack: ["HTML", "CSS", "JavaScript"],
     type: "Academic",
     githubUrl: "https://github.com/dumindu2041329/ubisoft-store",
+    image: "/projects/ubisoft-store.png",
   }
 ];

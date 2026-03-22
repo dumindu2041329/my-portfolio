@@ -1,9 +1,11 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, ChevronDown } from "lucide-react";
 import GlowButton from "@/components/ui/GlowButton";
+
+const ThreeBackground = lazy(() => import("@/components/ui/ThreeBackground"));
 
 const roles = ["IT Student", "Full Stack Developer", "UI/UX Enthusiast", "Problem Solver"];
 
@@ -52,15 +54,13 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden scanline-overlay grid-bg pt-20 md:pt-24 pb-20 md:pb-24"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden scanline-overlay pt-20 md:pt-24 pb-20 md:pb-24"
       onMouseMove={handleMouseMove}
     >
-      {/* Animated background orbs */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-[120px] animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-purple/5 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: "1s" }} />
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-accent-pink/5 rounded-full blur-[100px] animate-pulse" style={{ animationDelay: "2s" }} />
-      </div>
+      {/* Three.js animated background */}
+      <Suspense fallback={null}>
+        <ThreeBackground />
+      </Suspense>
 
       {/* Mouse-following glow */}
       <div
