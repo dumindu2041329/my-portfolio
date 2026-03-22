@@ -64,6 +64,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${orbitron.variable} ${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-screen bg-base text-text-primary">
         <a href="#main-content" className="skip-link">

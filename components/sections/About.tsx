@@ -7,10 +7,9 @@ import { Download } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 
 const stats = [
-  { label: "Projects Completed", value: 10 },
-  { label: "Technologies Known", value: 15 },
-  { label: "Certifications Earned", value: 5 },
-  { label: "Years Learning", value: 3 },
+  { label: "Projects Completed", value: 6 },
+  { label: "Technologies Known", value: 10 },
+  { label: "Years Learning", value: 2 },
 ];
 
 function AnimatedCounter({ value, inView }: { value: number; inView: boolean }) {
@@ -78,6 +77,7 @@ export default function About() {
                     src="/profile.png"
                     alt="Dumindu Damsara"
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover"
                     priority
                   />
@@ -125,7 +125,7 @@ export default function About() {
         </div>
 
         {/* Stat cards */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-16 md:mt-20">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-8 mt-16 md:mt-20">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -133,7 +133,7 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="glass rounded-2xl p-6 text-center neon-border hover:glow-cyan transition-all duration-300"
+              className="glass rounded-2xl p-6 text-center neon-border hover:glow-cyan transition-all duration-300 min-w-[150px] md:min-w-[200px]"
             >
               <AnimatedCounter value={stat.value} inView={inView} />
               <p className="text-text-muted text-sm mt-2 font-heading">
