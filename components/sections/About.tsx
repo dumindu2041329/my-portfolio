@@ -80,6 +80,7 @@ export default function About() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover"
                     priority
+                    loading="eager"
                   />
                 </div>
               </div>

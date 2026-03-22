@@ -13,6 +13,7 @@ interface ProjectCardProps {
 export default function ProjectCard({ project, index }: ProjectCardProps) {
   return (
     <motion.div
+      tabIndex={0}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
@@ -28,6 +29,8 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             src={project.image}
             alt={project.title}
             fill
+            priority
+            loading="eager"
             className="object-cover transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
@@ -40,7 +43,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent z-10" />
         {/* Hover overlay */}
-        <div className="absolute inset-0 z-20 flex items-center justify-center gap-4 bg-base/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="absolute inset-0 z-20 flex items-center justify-center gap-4 bg-base/80 opacity-0 group-hover:opacity-100 group-focus:opacity-100 focus-within:opacity-100 transition-opacity duration-300">
           {project.liveUrl && (
             <a
               href={project.liveUrl}
