@@ -121,7 +121,7 @@ export default function Hero() {
           <GlowButton href="#projects" variant="primary">
             View My Work
           </GlowButton>
-          <GlowButton href="/resume.pdf" variant="secondary" download>
+          <GlowButton href="/My CV.pdf" variant="secondary" download>
             Download CV
           </GlowButton>
         </motion.div>

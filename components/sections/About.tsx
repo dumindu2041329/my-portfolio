@@ -115,7 +115,7 @@ export default function About() {
               web development fundamentals.
             </p>
             <a
-              href="/resume.pdf"
+              href="/My CV.pdf"
               download
               className="inline-flex items-center gap-2 text-accent hover:text-accent-pink transition-colors duration-300 font-heading font-semibold text-sm"
             >

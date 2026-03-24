@@ -108,7 +108,7 @@ export default function Navbar() {
           {/* CTA + hamburger */}
           <div className="flex items-center gap-4">
             <a
-              href="/resume.pdf"
+              href="/My CV.pdf"
               download
               className="hidden md:inline-flex items-center gap-2 px-5 py-2 text-sm font-heading font-semibold text-accent border border-accent/30 rounded-full hover:border-accent hover:shadow-[0_0_15px_rgba(0,240,255,0.3)] transition-all duration-300"
             >
@@ -153,7 +153,7 @@ export default function Navbar() {
                 </button>
               ))}
               <a
-                href="/resume.pdf"
+                href="/My CV.pdf"
                 download
                 className="flex items-center gap-2 px-4 py-3 mt-2 text-sm font-heading font-semibold text-accent border border-accent/30 rounded-xl hover:border-accent transition-all duration-300"
               >
