@@ -12,6 +12,17 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "my-portfolio",
+    title: "Personal Portfolio",
+    description: "A futuristic, dark-themed personal portfolio website showcasing my projects, skills, experience, and education.",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Three.js"],
+    type: "Web",
+    githubUrl: "https://github.com/dumindu2041329/my-portfolio",
+    liveUrl: "https://my-portfolio-black-tau-5py5tjtcpl.vercel.app",
+    image: "/projects/my-portfolio.png",
+    featured: true,
+  },
+  {
     id: "phpmyadmin-themes",
     title: "phpMyAdmin Themes",
     description: "A collection of beautiful, handcrafted themes for phpMyAdmin (including NeoBrutalism and Supabase themes) — giving your database management interface a stunning modern look.",
