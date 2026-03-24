@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #f0f4f8; font-family: 'Roboto', Arial, sans-serif;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+        style="background-color: #f0f4f8; padding: 40px 20px;">
+        <tr>
+            <td align="center">
+                <table role="presentation" width="600" cellpadding="0" cellspacing="0"
+                    style="max-width: 600px; width: 100%; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.12);">
+                    <!-- Header -->
+                    <tr>
+                        <td style="
+                  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                  padding: 40px 40px 30px;
+                  text-align: center;
+                ">
+                            <div style="font-size: 42px; margin-bottom: 12px;">✉️</div>
+                            <h1 style="
+                    margin: 0;
+                    color: #ffffff;
+                    font-size: 26px;
+                    font-weight: 700;
+                    letter-spacing: -0.5px;
+                  ">
+                                New Message Received
+                            </h1>
+                            <p style="margin: 8px 0 0; color: rgba(255,255,255,0.8); font-size: 14px;">
+                                Someone reached out through your portfolio
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- Body -->
+                    <tr>
+                        <td style="background-color: #ffffff; padding: 36px 40px;">
+                            <!-- Intro text -->
+                            <p style="margin: 0 0 28px; color: #4a5568; font-size: 15px; line-height: 1.6;">
+                                Hi there! You have a new message from
+                                <strong style="color: #667eea;">{{name}}</strong>. Please reply at your earliest
+                                convenience.
+                            </p>
+
+                            <!-- Sender card -->
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="
+                    background: linear-gradient(135deg, #f8f9ff 0%, #eef0ff 100%);
+                    border: 1px solid #e2e8f0;
+                    border-left: 4px solid #667eea;
+                    border-radius: 10px;
+                    margin-bottom: 28px;
+                  ">
+                                <tr>
+                                    <td style="padding: 20px 24px;">
+                                        <!-- Sender info row -->
+                                        <table role="presentation" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td style="
+                              width: 50px;
+                              height: 50px;
+                              background: linear-gradient(135deg, #667eea, #764ba2);
+                              border-radius: 50%;
+                              text-align: center;
+                              vertical-align: middle;
+                              font-size: 22px;
+                              color: #fff;
+                            ">
+                                                    👤
+                                                </td>
+                                                <td style="padding-left: 16px; vertical-align: middle;">
+                                                    <div style="
+                                font-size: 17px;
+                                font-weight: 700;
+                                color: #2d3748;
+                              ">
+                                                        {{name}}
+                                                    </div>
+                                                    <div style="
+                                font-size: 12px;
+                                color: #a0aec0;
+                                margin-top: 3px;
+                              ">
+                                                        🕐 {{time}}
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- Divider -->
+                                <tr>
+                                    <td style="padding: 0 24px;">
+                                        <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 0;" />
+                                    </td>
+                                </tr>
+                                <!-- Message -->
+                                <tr>
+                                    <td style="padding: 20px 24px;">
+                                        <p style="
+                          margin: 0;
+                          font-size: 15px;
+                          color: #4a5568;
+                          line-height: 1.75;
+                        ">
+                                            {{message}}
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Reply tip -->
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="
+                    background-color: #fff8e1;
+                    border: 1px solid #ffe082;
+                    border-radius: 8px;
+                    margin-bottom: 8px;
+                  ">
+                                <tr>
+                                    <td style="padding: 14px 20px;">
+                                        <p style="margin: 0; font-size: 13px; color: #7c6003;">
+                                            💡 <strong>Tip:</strong> You can reply directly to this email to respond to
+                                            {{name}}.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="
+                  background-color: #f7fafc;
+                  border-top: 1px solid #e2e8f0;
+                  padding: 24px 40px;
+                  text-align: center;
+                ">
+                            <p style="margin: 0; font-size: 12px; color: #a0aec0; line-height: 1.6;">
+                                This email was sent automatically via your portfolio contact form.<br />
+                                &copy; {{time}} &nbsp;·&nbsp; Dumindu's Portfolio
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

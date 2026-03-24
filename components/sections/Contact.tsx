@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Send, Check, Loader, Github, Linkedin, MessageCircle } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
@@ -17,7 +18,7 @@ interface ContactFormData {
 const socialLinks = [
   { icon: Github, href: "https://github.com/dumindu2041329", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/dumindu-damsara-0049ab246/", label: "LinkedIn" },
-  { icon: MessageCircle, href: "https://wa.me/94XXXXXXXXX", label: "WhatsApp" },
+  { icon: MessageCircle, href: "https://wa.me/94715594850", label: "WhatsApp" },
 ];
 
 export default function Contact() {
@@ -40,18 +41,27 @@ export default function Contact() {
   const onSubmit = async (data: ContactFormData) => {
     setStatus("sending");
     try {
-      // EmailJS integration placeholder
-      // Replace with your own EmailJS credentials:
-      // import emailjs from '@emailjs/browser';
-      // await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', data, 'YOUR_PUBLIC_KEY');
+      if (!process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || !process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || !process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY) {
+        throw new Error("Missing EmailJS credentials");
+      }
 
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      console.log("Form data:", data);
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        {
+          name: data.name,
+          email: data.email,
+          subject: data.subject,
+          message: data.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      );
+
       setStatus("success");
       reset();
       setTimeout(() => setStatus("idle"), 4000);
-    } catch {
+    } catch (error) {
+      console.error("Failed to send email:", error);
       setStatus("error");
       setTimeout(() => setStatus("idle"), 4000);
     }
